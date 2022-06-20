@@ -1,0 +1,46 @@
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.container {
+    width: 80%;
+    background-color: #ddd;
+    margin: 50px auto;
+}
+.accordian {
+    width: 100%;
+    color: #555;
+    border: none;
+    padding: 10px;
+    text-align: start;
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition-property: background-color color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
+}
+.accordian::after {
+    content: "+";
+    float: right;
+    color: #777;
+}
+.active::after {
+    content: "-";
+    float: right;
+    color: #777;
+}
+.accordian:hover {
+    background-color: #444;
+    color: #999;
+}
+.desc {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.8s;
+}
